@@ -1,257 +1,105 @@
-# BB84 QKD — Circuit-Level Experimental Evaluation
+# BB84 QKD — Hardware Impact on Security
 
-**Research framework for evaluating the BB84 Quantum Key Distribution protocol under hardware noise and adversarial disturbance.**
-
----
-
-## Overview
-
-This project implements a **research-grade, circuit-level experimental framework** for the BB84 protocol using Qiskit AerSimulator and IBM Quantum hardware. The central scientific question is:
-
-> *Can natural hardware noise be mistaken for an adversarial intercept–resend attack — and if not, what QBER thresholds reliably distinguish the two?*
-
-This is a **cryptographic evaluation framework**, not a production QKD deployment. All claims are scoped to circuit-level simulation and NISQ hardware execution.
+Experimental evaluation of the BB84 Quantum Key Distribution protocol on IBM Quantum hardware. The core question is whether natural device noise on real superconducting hardware can be mistaken for an eavesdropping attack, and if not, where the line is.
 
 ---
 
-## Project Status
+## What This Project Is
 
-| Iteration | Status | Description |
-|-----------|--------|-------------|
-| Iteration 1 | ✅ Complete | Ideal baseline + Intercept–Resend attack (AerSimulator) |
-| Iteration 2 | ✅ Complete | Multi-trial comparative study (Ideal vs Noisy Sim vs Hardware) |
-| Iteration 3 | 🔄 In Progress | Distinguishability analysis — noise vs adversarial disturbance |
+BB84 is the foundational QKD protocol. In theory, any eavesdropper disturbs the quantum channel in a way that Alice and Bob can detect by measuring the Quantum Bit Error Rate (QBER). In practice, real quantum hardware introduces its own errors — and the question is whether those errors are small enough that you can still tell the difference between a noisy device and an active attack.
+
+This project runs BB84 across four conditions — ideal simulation, noisy simulation, real IBM hardware, and hardware with a simulated attack — and compares the QBER across all of them.
 
 ---
 
-## Key Findings (Iterations 1 & 2)
+## Key Results So Far
 
-| Mode | Observed QBER | Interpretation |
-|------|---------------|----------------|
-| Ideal simulator | ~0% | Correct baseline — zero error in noise-free execution |
-| IBM Hardware | ~0.6% | Low, stable device noise |
-| Backend noisy simulator | ~45% | **Unrealistically pessimistic** — not a valid proxy for hardware |
-| Intercept–resend attack | ~25% | Consistent with BB84 theoretical prediction |
+| Mode | QBER | Notes |
+|------|------|-------|
+| Ideal simulator | ~0% | Expected — no noise, no adversary |
+| IBM Hardware | ~0.6% | Low and stable, real device noise |
+| Backend noise model | ~45% | Far too high — not a reliable proxy for hardware |
+| Intercept–resend attack | ~25% | Matches BB84 theory |
 
-**Critical insight:** Backend-derived noise models significantly overestimate error rates for shallow BB84 circuits. Real hardware is the ground truth. Noisy simulators are treated only as stress-test upper bounds.
+The backend noise model result (~45%) is the most important finding so far. Noise models are built from gate calibration data, but BB84 circuits are so shallow (depth 2–3 after transpilation) that almost no gates execute — so the noise never accumulates the way the model predicts. This means you cannot use a noisy simulator to approximate real hardware for this protocol. Hardware runs are the only reliable reference.
 
 ---
 
-## Repository Structure
+## Project Structure
 
 ```
-project_root/
-│
-├── bb84_iteration1.py       ← Iteration 1 main script (this file)
-│
-├── src/                     ← (future) shared library modules
-│   ├── __init__.py
-│   ├── protocol.py          ← BB84 core logic
-│   ├── noise.py             ← Noise and attack models
-│   └── metrics.py           ← QBER estimation and reporting
-│
-├── experiments/             ← (future) per-iteration scripts
-│   ├── iter1_ideal_aer.py
-│   ├── iter2_multi_trial.py
-│   └── iter3_distinguishability.py
-│
-├── tests/                   ← (future) unit and integration tests
-│   └── test_bb84_core.py
-│
-├── notebooks/               ← Jupyter scratch notebooks (not primary source)
-│   ├── AER.ipynb
-│   ├── Key_sharing.ipynb
-│   └── NEW_Method.ipynb
-│
-├── results/                 ← Saved JSON metrics outputs
-│
-├── README.md                ← This file
-└── ANALYSIS.md              ← Code analysis and roadmap
+├── bb84_iteration1.py      # Ideal + intercept–resend simulation (Aer)
+├── bb84_hardware.py        # Hardware execution + synthetic attack (IBM Quantum)
+├── AER.ipynb               # Development notebook for Iteration 1
+├── Key_sharing.ipynb       # Early BB84 key sharing exploration
+├── NEW_Method.ipynb        # Alternative circuit approach scratch work
+└── README.md
 ```
+
+The `.py` files are the primary research scripts. The notebooks are scratch work kept for reference.
 
 ---
 
-## Iteration 1 — Experimental Design
+## Iteration Status
 
-### Execution Modes
+**Iteration 1 — Done**
+Ran ideal BB84 on AerSimulator and compared it against an intercept–resend attack modelled as a Pauli channel. Confirmed QBER ≈ 0% (ideal) and ≈ 25% (attack). Validated the circuit logic, sifting pipeline, and QBER estimator.
 
-**Mode 1 — Ideal Baseline**
-- AerSimulator, stabilizer method
-- No noise model, no adversary
-- Expected QBER ≈ 0%
-- Purpose: verify circuit logic correctness
+**Iteration 2 — Done**
+Multi-trial comparison across ideal sim, backend noise model, and real IBM hardware. This is where the noise model issue was discovered. Hardware QBER was consistently ~0.6%, backend model was ~45%.
 
-**Mode 2 — Intercept–Resend Attack**
-- AerSimulator with Eve-equivalent Pauli channel
-- Channel: ρ → 0.50·IρI + 0.25·XρX + 0.25·ZρZ
-- Applied via `id` marker gates inserted between Alice prep and Bob measurement
-- Expected QBER ≈ 25% (as established in BB84/QKD foundational literature)
-
-### Why this channel models Eve
-
-Eve picks a random basis (Z or X) with equal probability. When her basis matches Alice's (prob = 0.5), no error occurs. When it does not match (prob = 0.5), the re-sent state introduces errors in the mismatched basis — producing a net QBER of 25% on the sifted key.
+**Iteration 3 — In Progress**
+The focus shifts to distinguishability: can you statistically prove that an attack is happening, given that hardware always has some background noise? This requires multi-trial data, hypothesis testing, and confidence intervals — none of which are in the codebase yet.
 
 ---
 
 ## Running the Code
 
-### Requirements
-
+Install dependencies:
 ```bash
-pip install qiskit qiskit-aer numpy matplotlib
+pip install qiskit qiskit-aer qiskit-ibm-runtime numpy matplotlib
 ```
 
-Tested with:
-- Python 3.10+
-- Qiskit ≥ 1.0
-- Qiskit-Aer ≥ 0.14
-
-### Run Iteration 1
-
+**Iteration 1 (local, no hardware needed):**
 ```bash
 python bb84_iteration1.py
 ```
 
-### Expected Output
+**Hardware execution:**
 
-```
-============================================================
-BB84 QKD — Iteration 1: Ideal + Intercept–Resend
-============================================================
+Set your IBM Quantum token as an environment variable, then run:
+```bash
+# Windows
+set IBM_QUANTUM_TOKEN=your_token_here
 
-Running sanity checks ...
-  [PASS] Ideal QBER < 2%
-         Ideal QBER = 0.0000
-  [PASS] Intercept–resend QBER > 10%
-         IR QBER    = 0.2471
-  [PASS] Sifting retention ≈ 50%
-         Retention  = 0.5117
-Sanity checks passed.
+# Mac / Linux
+export IBM_QUANTUM_TOKEN=your_token_here
 
-Running ideal BB84 simulation ...
-Running intercept–resend simulation ...
-
-============================================================
-RESULTS
-============================================================
-{
-  "iteration": 1,
-  "ideal": {
-    "mode": "ideal",
-    "n_qubits": 256,
-    "shots": 4096,
-    "QBER": 0.0,
-    ...
-  },
-  "intercept_resend": {
-    "mode": "intercept_resend",
-    "QBER": 0.25,
-    ...
-  }
-}
-
-DISTINGUISHABILITY ANALYSIS
-  Ideal QBER           : 0.0000
-  Intercept–Resend QBER: 0.2500
-  ΔQBER (IR - Ideal)   : 0.2500
-  [CONCLUSION] Adversarial QBER is statistically distinguishable
-               from ideal hardware noise. BB84 would detect Eve.
+python bb84_hardware.py
 ```
 
-### Metrics Schema
-
-Each experiment produces a structured output:
-
-```json
-{
-  "mode": "ideal | intercept_resend",
-  "n_qubits": 256,
-  "shots": 4096,
-  "seed": 42,
-  "backend_name": "AerSimulator(stabilizer)",
-  "disturbance_type": "none | intercept_resend_equivalent_channel",
-  "raw_key_length": 256,
-  "sifted_key_length": 131,
-  "retention_rate": 0.5117,
-  "sample_size": 64,
-  "errors_in_sample": 0,
-  "QBER": 0.0
-}
-```
-
----
-
-## Scientific Framing
-
-This work is a **circuit-level experimental cryptographic evaluation** under controlled simulation. Specifically:
-
-- Hardware-first: IBM Quantum hardware results are the physical ground truth.
-- Noisy simulators: treated as stress-test upper bounds only, not hardware proxies.
-- Adversarial models: intercept–resend is implemented as a statistically equivalent Pauli channel, not real-time physical interception.
-- Claims are scoped to: QBER estimation, distinguishability analysis, and statistical comparison across modes.
-
-This project does **not** claim:
-- Production-ready QKD
-- Absolute cryptographic security guarantees
-- Real-world photonic channel performance
-
----
-
-## Architecture Principles
-
-- **No global state.** All configuration passed through `ExperimentConfig`.
-- **Reproducibility.** Every RNG call uses explicit seeds.
-- **Modular.** Every logical step is its own function with type hints and docstrings.
-- **Stabilizer simulation.** BB84 uses only Clifford gates; the stabilizer method is exact and efficient.
-- **Mandatory sanity checks.** `run_sanity_checks()` is always called before the main experiment.
-
----
-
-## Roadmap
-
-### Iteration 3 (Next)
-
-- [ ] Hardware baseline execution on IBM Quantum
-- [ ] Synthetic post-measurement attack (bit flips, p=0.25) on hardware output
-- [ ] Statistical hypothesis testing (t-test or KS-test) across modes
-- [ ] Confidence intervals on QBER estimates
-- [ ] Multi-trial evaluation (multiple seeds)
-- [ ] QBER threshold estimation (empirical security boundary)
-
-### Future
-
-- [ ] Error mitigation techniques (ZNE, measurement error mitigation)
-- [ ] Adaptive adversarial models
-- [ ] Real-time QBER monitoring
-- [ ] Extension to E91 and B92 protocols
-
----
-
-## Security Notice
-
-**Never commit IBM Quantum API keys to version control.**
-
-Use environment variables:
-
+Or in a Jupyter notebook, set it in a cell before running:
 ```python
 import os
-from qiskit_ibm_runtime import QiskitRuntimeService
-
-QiskitRuntimeService.save_account(
-    channel="ibm_cloud",
-    token=os.environ["IBM_QUANTUM_TOKEN"],
-    set_as_default=True,
-    overwrite=True,
-)
+os.environ["IBM_QUANTUM_TOKEN"] = "your_token_here"
 ```
 
-Add `.env` and any file containing `ApiKey-` to `.gitignore`.
+Configuration (n_qubits, shots, seed, channel) is set at the top of `main()` in each script — edit the variables directly.
+
+---
+
+## What Still Needs to Be Done
+
+- Multi-trial runner (loop over seeds, collect QBER distributions)
+- Statistical hypothesis testing — t-test and KS-test between noise and attack distributions
+- Confidence intervals on QBER estimates
+- Empirical QBER threshold from hardware data (currently stated as 5–15%, needs measurement)
+- Distribution plots across trials (not just single-run bar charts)
 
 ---
 
 ## References
 
-- Bennett & Brassard, "Quantum cryptography: Public key distribution and coin tossing," 1984.
-- Shor & Preskill, "Simple proof of security of the BB84 quantum key distribution protocol," 2000.
-- IBM Quantum Documentation: [docs.quantum.ibm.com](https://docs.quantum.ibm.com)
-- Qiskit Aer Documentation: [qiskit.github.io/qiskit-aer](https://qiskit.github.io/qiskit-aer)
+- Bennett & Brassard, 1984 — original BB84 paper
+- Shor & Preskill, 2000 — security proof
+- [IBM Quantum Documentation](https://docs.quantum.ibm.com)

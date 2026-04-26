@@ -1,0 +1,386 @@
+{
+  "backend_A": {
+    "backend": "ibm_kingston",
+    "hw_mean": 0.0119,
+    "hw_std": 0.0057,
+    "atk_mean": 0.0309,
+    "ks_stat": 1.0,
+    "ks_pval": 1.45e-11,
+    "detectable_at_2pct": true,
+    "security_margin": 0.0981
+  },
+  "backend_B": {
+    "backend": "ibm_marrakesh",
+    "hw_mean": 0.0194,
+    "hw_std": 0.0151,
+    "atk_mean": 0.0383,
+    "ks_stat": 0.75,
+    "ks_pval": 9.55e-06,
+    "detectable_at_2pct": true,
+    "security_margin": 0.0906
+  },
+  "trials_A": [
+    {
+      "seed": 42,
+      "hw_QBER": 0.011,
+      "atk_QBER": 0.0273,
+      "ci_lo": 0.0082,
+      "ci_hi": 0.0147,
+      "sifted_length": 17,
+      "secret_key_length": 9
+    },
+    {
+      "seed": 43,
+      "hw_QBER": 0.0033,
+      "atk_QBER": 0.024,
+      "ci_lo": 0.0019,
+      "ci_hi": 0.0058,
+      "sifted_length": 15,
+      "secret_key_length": 8
+    },
+    {
+      "seed": 44,
+      "hw_QBER": 0.0111,
+      "atk_QBER": 0.0277,
+      "ci_lo": 0.0079,
+      "ci_hi": 0.0154,
+      "sifted_length": 13,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 45,
+      "hw_QBER": 0.0145,
+      "atk_QBER": 0.0377,
+      "ci_lo": 0.0111,
+      "ci_hi": 0.019,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 46,
+      "hw_QBER": 0.0117,
+      "atk_QBER": 0.0328,
+      "ci_lo": 0.0082,
+      "ci_hi": 0.0167,
+      "sifted_length": 11,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 47,
+      "hw_QBER": 0.0068,
+      "atk_QBER": 0.0257,
+      "ci_lo": 0.0045,
+      "ci_hi": 0.0104,
+      "sifted_length": 13,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 48,
+      "hw_QBER": 0.0063,
+      "atk_QBER": 0.0266,
+      "ci_lo": 0.0039,
+      "ci_hi": 0.0101,
+      "sifted_length": 11,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 49,
+      "hw_QBER": 0.0085,
+      "atk_QBER": 0.0277,
+      "ci_lo": 0.0058,
+      "ci_hi": 0.0124,
+      "sifted_length": 12,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 50,
+      "hw_QBER": 0.0149,
+      "atk_QBER": 0.033,
+      "ci_lo": 0.0116,
+      "ci_hi": 0.0191,
+      "sifted_length": 16,
+      "secret_key_length": 8
+    },
+    {
+      "seed": 51,
+      "hw_QBER": 0.0053,
+      "atk_QBER": 0.0234,
+      "ci_lo": 0.0034,
+      "ci_hi": 0.0083,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 52,
+      "hw_QBER": 0.0059,
+      "atk_QBER": 0.029,
+      "ci_lo": 0.0037,
+      "ci_hi": 0.0092,
+      "sifted_length": 12,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 53,
+      "hw_QBER": 0.013,
+      "atk_QBER": 0.0297,
+      "ci_lo": 0.0101,
+      "ci_hi": 0.0167,
+      "sifted_length": 19,
+      "secret_key_length": 10
+    },
+    {
+      "seed": 54,
+      "hw_QBER": 0.0156,
+      "atk_QBER": 0.036,
+      "ci_lo": 0.0121,
+      "ci_hi": 0.0202,
+      "sifted_length": 15,
+      "secret_key_length": 8
+    },
+    {
+      "seed": 55,
+      "hw_QBER": 0.0231,
+      "atk_QBER": 0.0404,
+      "ci_lo": 0.0184,
+      "ci_hi": 0.0291,
+      "sifted_length": 12,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 56,
+      "hw_QBER": 0.014,
+      "atk_QBER": 0.0315,
+      "ci_lo": 0.0106,
+      "ci_hi": 0.0183,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 57,
+      "hw_QBER": 0.0067,
+      "atk_QBER": 0.0237,
+      "ci_lo": 0.0045,
+      "ci_hi": 0.0099,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 58,
+      "hw_QBER": 0.0219,
+      "atk_QBER": 0.0426,
+      "ci_lo": 0.0169,
+      "ci_hi": 0.0283,
+      "sifted_length": 10,
+      "secret_key_length": 5
+    },
+    {
+      "seed": 59,
+      "hw_QBER": 0.0215,
+      "atk_QBER": 0.042,
+      "ci_lo": 0.0169,
+      "ci_hi": 0.0272,
+      "sifted_length": 13,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 60,
+      "hw_QBER": 0.007,
+      "atk_QBER": 0.024,
+      "ci_lo": 0.0047,
+      "ci_hi": 0.0103,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 61,
+      "hw_QBER": 0.0153,
+      "atk_QBER": 0.0329,
+      "ci_lo": 0.0115,
+      "ci_hi": 0.0203,
+      "sifted_length": 13,
+      "secret_key_length": 7
+    }
+  ],
+  "trials_B": [
+    {
+      "seed": 42,
+      "hw_QBER": 0.0112,
+      "atk_QBER": 0.0269,
+      "ci_lo": 0.0084,
+      "ci_hi": 0.0149,
+      "sifted_length": 17,
+      "secret_key_length": 9
+    },
+    {
+      "seed": 43,
+      "hw_QBER": 0.0287,
+      "atk_QBER": 0.0508,
+      "ci_lo": 0.0238,
+      "ci_hi": 0.0347,
+      "sifted_length": 15,
+      "secret_key_length": 8
+    },
+    {
+      "seed": 44,
+      "hw_QBER": 0.0111,
+      "atk_QBER": 0.0277,
+      "ci_lo": 0.0079,
+      "ci_hi": 0.0154,
+      "sifted_length": 13,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 45,
+      "hw_QBER": 0.01,
+      "atk_QBER": 0.0338,
+      "ci_lo": 0.0073,
+      "ci_hi": 0.0139,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 46,
+      "hw_QBER": 0.0477,
+      "atk_QBER": 0.068,
+      "ci_lo": 0.0401,
+      "ci_hi": 0.0566,
+      "sifted_length": 11,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 47,
+      "hw_QBER": 0.0078,
+      "atk_QBER": 0.0267,
+      "ci_lo": 0.0053,
+      "ci_hi": 0.0116,
+      "sifted_length": 13,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 48,
+      "hw_QBER": 0.0434,
+      "atk_QBER": 0.0633,
+      "ci_lo": 0.0361,
+      "ci_hi": 0.052,
+      "sifted_length": 11,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 49,
+      "hw_QBER": 0.0085,
+      "atk_QBER": 0.0273,
+      "ci_lo": 0.0058,
+      "ci_hi": 0.0124,
+      "sifted_length": 12,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 50,
+      "hw_QBER": 0.0212,
+      "atk_QBER": 0.0396,
+      "ci_lo": 0.0173,
+      "ci_hi": 0.0261,
+      "sifted_length": 16,
+      "secret_key_length": 8
+    },
+    {
+      "seed": 51,
+      "hw_QBER": 0.0064,
+      "atk_QBER": 0.0251,
+      "ci_lo": 0.0043,
+      "ci_hi": 0.0096,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 52,
+      "hw_QBER": 0.0127,
+      "atk_QBER": 0.0358,
+      "ci_lo": 0.0093,
+      "ci_hi": 0.0173,
+      "sifted_length": 12,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 53,
+      "hw_QBER": 0.0143,
+      "atk_QBER": 0.0312,
+      "ci_lo": 0.0113,
+      "ci_hi": 0.0182,
+      "sifted_length": 19,
+      "secret_key_length": 10
+    },
+    {
+      "seed": 54,
+      "hw_QBER": 0.0137,
+      "atk_QBER": 0.0332,
+      "ci_lo": 0.0104,
+      "ci_hi": 0.018,
+      "sifted_length": 15,
+      "secret_key_length": 8
+    },
+    {
+      "seed": 55,
+      "hw_QBER": 0.0072,
+      "atk_QBER": 0.0247,
+      "ci_lo": 0.0047,
+      "ci_hi": 0.0108,
+      "sifted_length": 12,
+      "secret_key_length": 6
+    },
+    {
+      "seed": 56,
+      "hw_QBER": 0.0156,
+      "atk_QBER": 0.0326,
+      "ci_lo": 0.0121,
+      "ci_hi": 0.0202,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 57,
+      "hw_QBER": 0.0114,
+      "atk_QBER": 0.0293,
+      "ci_lo": 0.0084,
+      "ci_hi": 0.0155,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 58,
+      "hw_QBER": 0.0602,
+      "atk_QBER": 0.0793,
+      "ci_lo": 0.0516,
+      "ci_hi": 0.07,
+      "sifted_length": 10,
+      "secret_key_length": 5
+    },
+    {
+      "seed": 59,
+      "hw_QBER": 0.0075,
+      "atk_QBER": 0.0286,
+      "ci_lo": 0.005,
+      "ci_hi": 0.0112,
+      "sifted_length": 13,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 60,
+      "hw_QBER": 0.0352,
+      "atk_QBER": 0.0505,
+      "ci_lo": 0.0296,
+      "ci_hi": 0.0417,
+      "sifted_length": 14,
+      "secret_key_length": 7
+    },
+    {
+      "seed": 61,
+      "hw_QBER": 0.0137,
+      "atk_QBER": 0.0312,
+      "ci_lo": 0.0101,
+      "ci_hi": 0.0184,
+      "sifted_length": 13,
+      "secret_key_length": 7
+    }
+  ]
+}

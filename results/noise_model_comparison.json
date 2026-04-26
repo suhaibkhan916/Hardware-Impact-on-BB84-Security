@@ -1,0 +1,11 @@
+{
+  "hw_mean_qber": 0.0137,
+  "depolarizing": 0.0005,
+  "thermal": 0.0002,
+  "combined": 0.0164,
+  "overestimate_factors": {
+    "depolarizing": 0.04,
+    "thermal": 0.02,
+    "combined": 1.19
+  }
+}

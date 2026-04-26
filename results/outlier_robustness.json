@@ -1,0 +1,44 @@
+{
+  "kingston": {
+    "backend": "ibm_kingston",
+    "outlier_seeds": [],
+    "all_trials": {
+      "hw_mean": 0.0119,
+      "hw_std": 0.0057,
+      "ks": 1.0,
+      "p": 1.45e-11,
+      "detectable": true
+    },
+    "clean_trials": {
+      "n": 20,
+      "hw_mean": 0.0119,
+      "hw_std": 0.0057,
+      "ks": 1.0,
+      "p": 1.45e-11,
+      "detectable": true
+    }
+  },
+  "marrakesh": {
+    "backend": "ibm_marrakesh",
+    "outlier_seeds": [
+      46,
+      48,
+      58
+    ],
+    "all_trials": {
+      "hw_mean": 0.0194,
+      "hw_std": 0.0151,
+      "ks": 0.75,
+      "p": 9.55e-06,
+      "detectable": true
+    },
+    "clean_trials": {
+      "n": 17,
+      "hw_mean": 0.0139,
+      "hw_std": 0.0076,
+      "ks": 0.8824,
+      "p": 4.81e-07,
+      "detectable": true
+    }
+  }
+}

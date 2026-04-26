@@ -1,0 +1,208 @@
+{
+  "backend": "ibm_kingston",
+  "n_qubits": 27,
+  "shots": 256,
+  "check_fraction": 0.5,
+  "trials": [
+    {
+      "seed": 42,
+      "raw_key_length": 27,
+      "sifted_length": 17,
+      "check_bits": 8,
+      "secret_key_length": 9,
+      "retention_rate": 0.6296,
+      "errors": 27,
+      "QBER": 0.0132
+    },
+    {
+      "seed": 43,
+      "raw_key_length": 27,
+      "sifted_length": 15,
+      "check_bits": 7,
+      "secret_key_length": 8,
+      "retention_rate": 0.5556,
+      "errors": 5,
+      "QBER": 0.0028
+    },
+    {
+      "seed": 44,
+      "raw_key_length": 27,
+      "sifted_length": 13,
+      "check_bits": 6,
+      "secret_key_length": 7,
+      "retention_rate": 0.4815,
+      "errors": 23,
+      "QBER": 0.015
+    },
+    {
+      "seed": 45,
+      "raw_key_length": 27,
+      "sifted_length": 14,
+      "check_bits": 7,
+      "secret_key_length": 7,
+      "retention_rate": 0.5185,
+      "errors": 28,
+      "QBER": 0.0156
+    },
+    {
+      "seed": 46,
+      "raw_key_length": 27,
+      "sifted_length": 11,
+      "check_bits": 5,
+      "secret_key_length": 6,
+      "retention_rate": 0.4074,
+      "errors": 15,
+      "QBER": 0.0117
+    },
+    {
+      "seed": 47,
+      "raw_key_length": 27,
+      "sifted_length": 13,
+      "check_bits": 6,
+      "secret_key_length": 7,
+      "retention_rate": 0.4815,
+      "errors": 13,
+      "QBER": 0.0085
+    },
+    {
+      "seed": 48,
+      "raw_key_length": 27,
+      "sifted_length": 11,
+      "check_bits": 5,
+      "secret_key_length": 6,
+      "retention_rate": 0.4074,
+      "errors": 12,
+      "QBER": 0.0094
+    },
+    {
+      "seed": 49,
+      "raw_key_length": 27,
+      "sifted_length": 12,
+      "check_bits": 6,
+      "secret_key_length": 6,
+      "retention_rate": 0.4444,
+      "errors": 4,
+      "QBER": 0.0026
+    },
+    {
+      "seed": 50,
+      "raw_key_length": 27,
+      "sifted_length": 16,
+      "check_bits": 8,
+      "secret_key_length": 8,
+      "retention_rate": 0.5926,
+      "errors": 41,
+      "QBER": 0.02
+    },
+    {
+      "seed": 51,
+      "raw_key_length": 27,
+      "sifted_length": 14,
+      "check_bits": 7,
+      "secret_key_length": 7,
+      "retention_rate": 0.5185,
+      "errors": 21,
+      "QBER": 0.0117
+    },
+    {
+      "seed": 52,
+      "raw_key_length": 27,
+      "sifted_length": 12,
+      "check_bits": 6,
+      "secret_key_length": 6,
+      "retention_rate": 0.4444,
+      "errors": 14,
+      "QBER": 0.0091
+    },
+    {
+      "seed": 53,
+      "raw_key_length": 27,
+      "sifted_length": 19,
+      "check_bits": 9,
+      "secret_key_length": 10,
+      "retention_rate": 0.7037,
+      "errors": 30,
+      "QBER": 0.013
+    },
+    {
+      "seed": 54,
+      "raw_key_length": 27,
+      "sifted_length": 15,
+      "check_bits": 7,
+      "secret_key_length": 8,
+      "retention_rate": 0.5556,
+      "errors": 35,
+      "QBER": 0.0195
+    },
+    {
+      "seed": 55,
+      "raw_key_length": 27,
+      "sifted_length": 12,
+      "check_bits": 6,
+      "secret_key_length": 6,
+      "retention_rate": 0.4444,
+      "errors": 44,
+      "QBER": 0.0286
+    },
+    {
+      "seed": 56,
+      "raw_key_length": 27,
+      "sifted_length": 14,
+      "check_bits": 7,
+      "secret_key_length": 7,
+      "retention_rate": 0.5185,
+      "errors": 31,
+      "QBER": 0.0173
+    },
+    {
+      "seed": 57,
+      "raw_key_length": 27,
+      "sifted_length": 14,
+      "check_bits": 7,
+      "secret_key_length": 7,
+      "retention_rate": 0.5185,
+      "errors": 26,
+      "QBER": 0.0145
+    },
+    {
+      "seed": 58,
+      "raw_key_length": 27,
+      "sifted_length": 10,
+      "check_bits": 5,
+      "secret_key_length": 5,
+      "retention_rate": 0.3704,
+      "errors": 25,
+      "QBER": 0.0195
+    },
+    {
+      "seed": 59,
+      "raw_key_length": 27,
+      "sifted_length": 13,
+      "check_bits": 6,
+      "secret_key_length": 7,
+      "retention_rate": 0.4815,
+      "errors": 36,
+      "QBER": 0.0234
+    },
+    {
+      "seed": 60,
+      "raw_key_length": 27,
+      "sifted_length": 14,
+      "check_bits": 7,
+      "secret_key_length": 7,
+      "retention_rate": 0.5185,
+      "errors": 14,
+      "QBER": 0.0078
+    },
+    {
+      "seed": 61,
+      "raw_key_length": 27,
+      "sifted_length": 13,
+      "check_bits": 6,
+      "secret_key_length": 7,
+      "retention_rate": 0.4815,
+      "errors": 21,
+      "QBER": 0.0137
+    }
+  ]
+}

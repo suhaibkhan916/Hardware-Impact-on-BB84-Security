@@ -1,0 +1,99 @@
+{
+  "backend": "ibm_kingston",
+  "hw_noise_mean": 0.0137,
+  "hw_noise_std": 0.005,
+  "detection_threshold_fraction": 0.02,
+  "theoretical_threshold": 0.11,
+  "fine_sweep": [
+    {
+      "eve_fraction": 0.01,
+      "p_flip": 0.0025,
+      "atk_mean": 0.0161,
+      "atk_std": 0.0057,
+      "ks_statistic": 0.3,
+      "ks_pval": 0.336,
+      "detectable": false
+    },
+    {
+      "eve_fraction": 0.02,
+      "p_flip": 0.005,
+      "atk_mean": 0.0188,
+      "atk_std": 0.0049,
+      "ks_statistic": 0.55,
+      "ks_pval": 0.00397,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.03,
+      "p_flip": 0.0075,
+      "atk_mean": 0.0213,
+      "atk_std": 0.0048,
+      "ks_statistic": 0.75,
+      "ks_pval": 9.55e-06,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.04,
+      "p_flip": 0.01,
+      "atk_mean": 0.0233,
+      "atk_std": 0.0058,
+      "ks_statistic": 0.75,
+      "ks_pval": 9.55e-06,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.05,
+      "p_flip": 0.0125,
+      "atk_mean": 0.0248,
+      "atk_std": 0.0047,
+      "ks_statistic": 0.85,
+      "ks_pval": 1.43e-07,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.06,
+      "p_flip": 0.015,
+      "atk_mean": 0.0279,
+      "atk_std": 0.0047,
+      "ks_statistic": 0.95,
+      "ks_pval": 5.8e-10,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.07,
+      "p_flip": 0.0175,
+      "atk_mean": 0.0314,
+      "atk_std": 0.0065,
+      "ks_statistic": 0.95,
+      "ks_pval": 5.8e-10,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.08,
+      "p_flip": 0.02,
+      "atk_mean": 0.0323,
+      "atk_std": 0.0055,
+      "ks_statistic": 0.95,
+      "ks_pval": 5.8e-10,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.09,
+      "p_flip": 0.0225,
+      "atk_mean": 0.0357,
+      "atk_std": 0.0059,
+      "ks_statistic": 0.95,
+      "ks_pval": 5.8e-10,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.1,
+      "p_flip": 0.025,
+      "atk_mean": 0.0388,
+      "atk_std": 0.0059,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    }
+  ]
+}

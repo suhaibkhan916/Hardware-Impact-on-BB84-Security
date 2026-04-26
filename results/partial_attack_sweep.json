@@ -1,0 +1,98 @@
+{
+  "backend": "ibm_kingston",
+  "hw_noise_mean": 0.0137,
+  "hw_noise_std": 0.005,
+  "detection_threshold_fraction": 0.05,
+  "sweep": [
+    {
+      "eve_fraction": 0.05,
+      "p_flip": 0.0125,
+      "atk_mean_qber": 0.0258,
+      "atk_std_qber": 0.0059,
+      "ks_statistic": 0.85,
+      "ks_pval": 1.43e-07,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.1,
+      "p_flip": 0.025,
+      "atk_mean_qber": 0.0384,
+      "atk_std_qber": 0.0049,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.15,
+      "p_flip": 0.0375,
+      "atk_mean_qber": 0.0506,
+      "atk_std_qber": 0.0046,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.2,
+      "p_flip": 0.05,
+      "atk_mean_qber": 0.0621,
+      "atk_std_qber": 0.0062,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.25,
+      "p_flip": 0.0625,
+      "atk_mean_qber": 0.0728,
+      "atk_std_qber": 0.0048,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.3,
+      "p_flip": 0.075,
+      "atk_mean_qber": 0.086,
+      "atk_std_qber": 0.0049,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.4,
+      "p_flip": 0.1,
+      "atk_mean_qber": 0.112,
+      "atk_std_qber": 0.0082,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.5,
+      "p_flip": 0.125,
+      "atk_mean_qber": 0.1336,
+      "atk_std_qber": 0.0065,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 0.75,
+      "p_flip": 0.1875,
+      "atk_mean_qber": 0.1962,
+      "atk_std_qber": 0.0074,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "eve_fraction": 1.0,
+      "p_flip": 0.25,
+      "atk_mean_qber": 0.2585,
+      "atk_std_qber": 0.0079,
+      "ks_statistic": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "backend": "ibm_kingston",
+  "n_qubits": 27,
+  "shots": 512,
+  "hw_mean": 0.0111,
+  "hw_std": 0.0046,
+  "validated_threshold_p_flip": 0.005,
+  "sweep": [
+    {
+      "p_flip": 0.005,
+      "eve_pct": 2.0,
+      "atk_mean": 0.0163,
+      "atk_std": 0.0045,
+      "ks_stat": 0.45,
+      "ks_pval": 0.0335,
+      "detectable": true
+    },
+    {
+      "p_flip": 0.01,
+      "eve_pct": 4.0,
+      "atk_mean": 0.0212,
+      "atk_std": 0.0048,
+      "ks_stat": 0.7,
+      "ks_pval": 5.57e-05,
+      "detectable": true
+    },
+    {
+      "p_flip": 0.015,
+      "eve_pct": 6.0,
+      "atk_mean": 0.0256,
+      "atk_std": 0.0053,
+      "ks_stat": 0.95,
+      "ks_pval": 5.8e-10,
+      "detectable": true
+    },
+    {
+      "p_flip": 0.02,
+      "eve_pct": 8.0,
+      "atk_mean": 0.0306,
+      "atk_std": 0.0055,
+      "ks_stat": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "p_flip": 0.025,
+      "eve_pct": 10.0,
+      "atk_mean": 0.0357,
+      "atk_std": 0.0043,
+      "ks_stat": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    },
+    {
+      "p_flip": 0.03,
+      "eve_pct": 12.0,
+      "atk_mean": 0.0408,
+      "atk_std": 0.0047,
+      "ks_stat": 1.0,
+      "ks_pval": 1.45e-11,
+      "detectable": true
+    }
+  ]
+}

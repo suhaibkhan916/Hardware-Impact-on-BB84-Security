@@ -1,0 +1,22 @@
+{
+  "hardware": {
+    "mean": 0.0137,
+    "std": 0.005,
+    "wilson_ci_95": [
+      0.0128,
+      0.0145
+    ]
+  },
+  "attack": {
+    "mean": 0.2556,
+    "std": 0.0095,
+    "wilson_ci_95": [
+      0.2523,
+      0.2589
+    ]
+  },
+  "t_test_pval": 2.33e-47,
+  "ks_statistic": 1.0,
+  "ks_pval": 1.45e-11,
+  "delta_qber": 0.2418
+}

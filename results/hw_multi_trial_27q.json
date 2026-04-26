@@ -1,0 +1,147 @@
+{
+  "backend": "ibm_fez",
+  "n_qubits": 27,
+  "shots": 256,
+  "trials": [
+    {
+      "seed": 42,
+      "sifted_length": 17,
+      "retention_rate": 0.6296,
+      "errors": 107,
+      "QBER": 0.0246
+    },
+    {
+      "seed": 43,
+      "sifted_length": 15,
+      "retention_rate": 0.5556,
+      "errors": 40,
+      "QBER": 0.0104
+    },
+    {
+      "seed": 44,
+      "sifted_length": 13,
+      "retention_rate": 0.4815,
+      "errors": 54,
+      "QBER": 0.0162
+    },
+    {
+      "seed": 45,
+      "sifted_length": 14,
+      "retention_rate": 0.5185,
+      "errors": 63,
+      "QBER": 0.0176
+    },
+    {
+      "seed": 46,
+      "sifted_length": 11,
+      "retention_rate": 0.4074,
+      "errors": 44,
+      "QBER": 0.0156
+    },
+    {
+      "seed": 47,
+      "sifted_length": 13,
+      "retention_rate": 0.4815,
+      "errors": 45,
+      "QBER": 0.0135
+    },
+    {
+      "seed": 48,
+      "sifted_length": 11,
+      "retention_rate": 0.4074,
+      "errors": 36,
+      "QBER": 0.0128
+    },
+    {
+      "seed": 49,
+      "sifted_length": 12,
+      "retention_rate": 0.4444,
+      "errors": 57,
+      "QBER": 0.0186
+    },
+    {
+      "seed": 50,
+      "sifted_length": 16,
+      "retention_rate": 0.5926,
+      "errors": 79,
+      "QBER": 0.0193
+    },
+    {
+      "seed": 51,
+      "sifted_length": 14,
+      "retention_rate": 0.5185,
+      "errors": 264,
+      "QBER": 0.0737
+    },
+    {
+      "seed": 52,
+      "sifted_length": 12,
+      "retention_rate": 0.4444,
+      "errors": 171,
+      "QBER": 0.0557
+    },
+    {
+      "seed": 53,
+      "sifted_length": 19,
+      "retention_rate": 0.7037,
+      "errors": 148,
+      "QBER": 0.0304
+    },
+    {
+      "seed": 54,
+      "sifted_length": 15,
+      "retention_rate": 0.5556,
+      "errors": 99,
+      "QBER": 0.0258
+    },
+    {
+      "seed": 55,
+      "sifted_length": 12,
+      "retention_rate": 0.4444,
+      "errors": 34,
+      "QBER": 0.0111
+    },
+    {
+      "seed": 56,
+      "sifted_length": 14,
+      "retention_rate": 0.5185,
+      "errors": 70,
+      "QBER": 0.0195
+    },
+    {
+      "seed": 57,
+      "sifted_length": 14,
+      "retention_rate": 0.5185,
+      "errors": 54,
+      "QBER": 0.0151
+    },
+    {
+      "seed": 58,
+      "sifted_length": 10,
+      "retention_rate": 0.3704,
+      "errors": 38,
+      "QBER": 0.0148
+    },
+    {
+      "seed": 59,
+      "sifted_length": 13,
+      "retention_rate": 0.4815,
+      "errors": 60,
+      "QBER": 0.018
+    },
+    {
+      "seed": 60,
+      "sifted_length": 14,
+      "retention_rate": 0.5185,
+      "errors": 108,
+      "QBER": 0.0301
+    },
+    {
+      "seed": 61,
+      "sifted_length": 13,
+      "retention_rate": 0.4815,
+      "errors": 319,
+      "QBER": 0.0959
+    }
+  ]
+}

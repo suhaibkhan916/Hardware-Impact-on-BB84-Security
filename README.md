@@ -16,13 +16,13 @@ BB84 guarantees that any eavesdropper disturbs the quantum channel in a detectab
 |---|---|---|
 | Ideal simulator | 0.00% | Exact baseline — no noise, no adversary |
 | Backend noise model | ~45% | 33× overestimate — not a valid hardware proxy |
-| IBM Hardware (ibm_kingston, N=27) | 1.37% ± 0.50% | Real device noise floor |
+| IBM Hardware (ibm_kingston, N=27) | 1.19% ± 0.57% | Real device noise floor |
 | Synthetic attack (p_flip=0.25) | 25.56% ± 0.97% | Bitstring-level bit flips |
 | KS statistic | 1.0 | p = 1.45×10⁻¹¹ — fully separable distributions |
 
-**The noise model finding:** Backend-derived noise models produce ~45% QBER on BB84, while real hardware gives ~1.37%. The overestimation occurs because BB84 circuits are only 2–4 gates deep after transpilation. The noise model applies full-device calibration error budgets regardless of circuit depth, so it accumulates errors that never actually occur on a shallow circuit. Noise models are treated as stress-test upper bounds only.
+**The noise model finding:** Backend-derived noise models produce ~45% QBER on BB84, while real hardware gives ~1.19%. The overestimation occurs because BB84 circuits are only 2–4 gates deep after transpilation. The noise model applies full-device calibration error budgets (derived from benchmark circuits of depth ~10) regardless of circuit depth, so it accumulates errors that never actually occur on a shallow circuit. Noise models are treated as stress-test upper bounds only.
 
-**The scaling finding:** Detection sensitivity depends on qubit count and trial count simultaneously. At N=27 with 20 trials on ibm_kingston, detection is clean (KS=1.0). At N=36, 20 trials fails — 50 trials are needed for marginal detection (KS=0.28, p=0.039). At N=54, detection fails even at 50 trials due to SWAP-induced noise accumulation.
+**The scaling finding:** Detection sensitivity depends on qubit count and trial count simultaneously. At N=27 with 20 trials on ibm_kingston, detection is clean (KS=1.0). At N=36, 20 trials fails — 50 trials are needed for marginal detection (KS=0.28, p=0.039). At N=54, detection fails even at 50 trials due to qubit calibration heterogeneity: as qubit count grows, the transpiler assigns circuits to qubits spanning a wider range of calibration quality, driving up QBER variance. Note: BB84 has no two-qubit gates, so SWAP overhead plays no role — variance growth is entirely due to qubit quality spread.
 
 ---
 
@@ -165,7 +165,7 @@ Parity-based reconciliation (simplified Cascade pass 1) corrects disagreements b
 | ibm_kingston | 45 | 20 | 1.26% | 0.35 | NO |
 | ibm_fez | 54 | 50 | 2.90% | 0.24 | NO |
 
-Detection requires 50 trials at N=36. At N=54, SWAP-induced noise accumulation prevents detection even at 50 trials. One trial (seed 61, N=54) produced hardware QBER = 25.6% — identical to a full attack — from hardware noise alone.
+Detection requires 50 trials at N=36. At N=54, qubit calibration heterogeneity prevents detection even at 50 trials — SWAP count is zero at all qubit counts, so routing is not the cause. One trial (seed 61, N=54) produced hardware QBER = 25.6% — identical to a full attack — from hardware noise alone.
 
 ---
 

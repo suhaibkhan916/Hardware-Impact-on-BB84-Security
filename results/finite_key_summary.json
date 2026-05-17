@@ -1,0 +1,132 @@
+{
+  "hardware_qber": 0.00896,
+  "eps_pa": 1e-10,
+  "eps_ec": 1e-10,
+  "check_fraction": 0.2,
+  "alpha": 0.05,
+  "asymptotic_rate": 0.852366,
+  "crossover_n_sifted": 305,
+  "crossover_n_qubits": 610,
+  "key_points": {
+    "17": {
+      "n_sifted": 17,
+      "n_check": 3,
+      "n_secret": 14,
+      "delta": 0.706604,
+      "qber_upper": 0.499,
+      "rate_raw": -0.073814,
+      "penalty": 3.966974,
+      "rate": -4.027762,
+      "key_bits": 0.0,
+      "asymptotic_rate": 0.852366
+    },
+    "27": {
+      "n_sifted": 27,
+      "n_check": 5,
+      "n_secret": 22,
+      "delta": 0.547333,
+      "qber_upper": 0.499,
+      "rate_raw": -0.073814,
+      "penalty": 2.497725,
+      "rate": -2.557869,
+      "key_bits": 0.0,
+      "asymptotic_rate": 0.852366
+    },
+    "54": {
+      "n_sifted": 54,
+      "n_check": 10,
+      "n_secret": 44,
+      "delta": 0.387023,
+      "qber_upper": 0.395983,
+      "rate_raw": -0.042369,
+      "penalty": 1.248862,
+      "rate": -1.283385,
+      "key_bits": 0.0,
+      "asymptotic_rate": 0.852366
+    },
+    "100": {
+      "n_sifted": 100,
+      "n_check": 20,
+      "n_secret": 80,
+      "delta": 0.273666,
+      "qber_upper": 0.282626,
+      "rate_raw": 0.067178,
+      "penalty": 0.674386,
+      "rate": -0.620643,
+      "key_bits": 0.0,
+      "asymptotic_rate": 0.852366
+    },
+    "200": {
+      "n_sifted": 200,
+      "n_check": 40,
+      "n_secret": 160,
+      "delta": 0.193511,
+      "qber_upper": 0.202471,
+      "rate_raw": 0.19934,
+      "penalty": 0.337193,
+      "rate": -0.177721,
+      "key_bits": 0.0,
+      "asymptotic_rate": 0.852366
+    },
+    "305": {
+      "n_sifted": 305,
+      "n_check": 61,
+      "n_secret": 244,
+      "delta": 0.156701,
+      "qber_upper": 0.165661,
+      "rate_raw": 0.278501,
+      "penalty": 0.22111,
+      "rate": 0.001691,
+      "key_bits": 0.516,
+      "asymptotic_rate": 0.852366
+    },
+    "500": {
+      "n_sifted": 500,
+      "n_check": 100,
+      "n_secret": 400,
+      "delta": 0.122387,
+      "qber_upper": 0.131347,
+      "rate_raw": 0.365061,
+      "penalty": 0.134877,
+      "rate": 0.157172,
+      "key_bits": 78.586,
+      "asymptotic_rate": 0.852366
+    },
+    "1000": {
+      "n_sifted": 1000,
+      "n_check": 200,
+      "n_secret": 800,
+      "delta": 0.086541,
+      "qber_upper": 0.095501,
+      "rate_raw": 0.471614,
+      "penalty": 0.067439,
+      "rate": 0.309852,
+      "key_bits": 309.852,
+      "asymptotic_rate": 0.852366
+    },
+    "2000": {
+      "n_sifted": 2000,
+      "n_check": 400,
+      "n_secret": 1600,
+      "delta": 0.061194,
+      "qber_upper": 0.070154,
+      "rate_raw": 0.559686,
+      "penalty": 0.033719,
+      "rate": 0.41403,
+      "key_bits": 828.059,
+      "asymptotic_rate": 0.852366
+    },
+    "3000": {
+      "n_sifted": 3000,
+      "n_check": 600,
+      "n_secret": 2400,
+      "delta": 0.049964,
+      "qber_upper": 0.058924,
+      "rate_raw": 0.603023,
+      "penalty": 0.02248,
+      "rate": 0.459939,
+      "key_bits": 1379.816,
+      "asymptotic_rate": 0.852366
+    }
+  }
+}

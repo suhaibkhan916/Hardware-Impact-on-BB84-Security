@@ -1,0 +1,940 @@
+{
+  "retrieved_at": "2026-05-15T21:01:51.801416+00:00",
+  "total_jobs": 88,
+  "paired_trials": 44,
+  "readout_error_used": 0.015,
+  "hardware_mean_qber": 0.45131273350947637,
+  "hardware_std_qber": 0.1253013039877022,
+  "attack_mean_qber": 0.46354979269124086,
+  "attack_std_qber": 0.12003804104441136,
+  "ks_stat": 0.13636363636363635,
+  "ks_p": 0.81401999395119,
+  "trials": [
+    {
+      "trial": 0,
+      "hw_QBER": 0.0,
+      "atk_QBER": 0.235
+    },
+    {
+      "trial": 1,
+      "hw_QBER": 0.429444,
+      "atk_QBER": 0.556429
+    },
+    {
+      "trial": 2,
+      "hw_QBER": 0.604048,
+      "atk_QBER": 0.279118
+    },
+    {
+      "trial": 3,
+      "hw_QBER": 0.50881,
+      "atk_QBER": 0.540556
+    },
+    {
+      "trial": 4,
+      "hw_QBER": 0.385,
+      "atk_QBER": 0.563947
+    },
+    {
+      "trial": 5,
+      "hw_QBER": 0.458684,
+      "atk_QBER": 0.556429
+    },
+    {
+      "trial": 6,
+      "hw_QBER": 0.50881,
+      "atk_QBER": 0.685
+    },
+    {
+      "trial": 7,
+      "hw_QBER": 0.429444,
+      "atk_QBER": 0.604048
+    },
+    {
+      "trial": 8,
+      "hw_QBER": 0.429444,
+      "atk_QBER": 0.292692
+    },
+    {
+      "trial": 9,
+      "hw_QBER": 0.332826,
+      "atk_QBER": 0.585
+    },
+    {
+      "trial": 10,
+      "hw_QBER": 0.514412,
+      "atk_QBER": 0.413571
+    },
+    {
+      "trial": 11,
+      "hw_QBER": 0.485,
+      "atk_QBER": 0.248158
+    },
+    {
+      "trial": 12,
+      "hw_QBER": 0.6725,
+      "atk_QBER": 0.680652
+    },
+    {
+      "trial": 13,
+      "hw_QBER": 0.451667,
+      "atk_QBER": 0.318333
+    },
+    {
+      "trial": 14,
+      "hw_QBER": 0.568333,
+      "atk_QBER": 0.413571
+    },
+    {
+      "trial": 15,
+      "hw_QBER": 0.573235,
+      "atk_QBER": 0.451667
+    },
+    {
+      "trial": 16,
+      "hw_QBER": 0.637174,
+      "atk_QBER": 0.373889
+    },
+    {
+      "trial": 17,
+      "hw_QBER": 0.530455,
+      "atk_QBER": 0.535
+    },
+    {
+      "trial": 18,
+      "hw_QBER": 0.621364,
+      "atk_QBER": 0.511316
+    },
+    {
+      "trial": 19,
+      "hw_QBER": 0.373889,
+      "atk_QBER": 0.2975
+    },
+    {
+      "trial": 20,
+      "hw_QBER": 0.332826,
+      "atk_QBER": 0.2975
+    },
+    {
+      "trial": 21,
+      "hw_QBER": 0.5475,
+      "atk_QBER": 0.514412
+    },
+    {
+      "trial": 22,
+      "hw_QBER": 0.396765,
+      "atk_QBER": 0.443333
+    },
+    {
+      "trial": 23,
+      "hw_QBER": 0.4225,
+      "atk_QBER": 0.446538
+    },
+    {
+      "trial": 24,
+      "hw_QBER": 0.632059,
+      "atk_QBER": 0.485
+    },
+    {
+      "trial": 25,
+      "hw_QBER": 0.385,
+      "atk_QBER": 0.5475
+    },
+    {
+      "trial": 26,
+      "hw_QBER": 0.485,
+      "atk_QBER": 0.396765
+    },
+    {
+      "trial": 27,
+      "hw_QBER": 0.4225,
+      "atk_QBER": 0.556429
+    },
+    {
+      "trial": 28,
+      "hw_QBER": 0.337941,
+      "atk_QBER": 0.600385
+    },
+    {
+      "trial": 29,
+      "hw_QBER": 0.373889,
+      "atk_QBER": 0.46119
+    },
+    {
+      "trial": 30,
+      "hw_QBER": 0.348636,
+      "atk_QBER": 0.514412
+    },
+    {
+      "trial": 31,
+      "hw_QBER": 0.1725,
+      "atk_QBER": 0.451667
+    },
+    {
+      "trial": 32,
+      "hw_QBER": 0.318333,
+      "atk_QBER": 0.5475
+    },
+    {
+      "trial": 33,
+      "hw_QBER": 0.335,
+      "atk_QBER": 0.485
+    },
+    {
+      "trial": 34,
+      "hw_QBER": 0.514412,
+      "atk_QBER": 0.300789
+    },
+    {
+      "trial": 35,
+      "hw_QBER": 0.593696,
+      "atk_QBER": 0.5475
+    },
+    {
+      "trial": 36,
+      "hw_QBER": 0.385,
+      "atk_QBER": 0.621364
+    },
+    {
+      "trial": 37,
+      "hw_QBER": 0.394091,
+      "atk_QBER": 0.451667
+    },
+    {
+      "trial": 38,
+      "hw_QBER": 0.50881,
+      "atk_QBER": 0.285
+    },
+    {
+      "trial": 39,
+      "hw_QBER": 0.396765,
+      "atk_QBER": 0.353421
+    },
+    {
+      "trial": 40,
+      "hw_QBER": 0.535,
+      "atk_QBER": 0.429444
+    },
+    {
+      "trial": 41,
+      "hw_QBER": 0.535,
+      "atk_QBER": 0.485
+    },
+    {
+      "trial": 42,
+      "hw_QBER": 0.585,
+      "atk_QBER": 0.36
+    },
+    {
+      "trial": 43,
+      "hw_QBER": 0.385,
+      "atk_QBER": 0.6725
+    }
+  ],
+  "raw_jobs": [
+    {
+      "index": 0,
+      "job_id": "d834lqfoha1c73bm9teg",
+      "type": "HW",
+      "raw_qber": 0.0,
+      "corr_qber": 0.0,
+      "n_circuits": 36
+    },
+    {
+      "index": 1,
+      "job_id": "d834sovoha1c73bma54g",
+      "type": "ATTACK",
+      "raw_qber": 0.25,
+      "corr_qber": 0.235,
+      "n_circuits": 36
+    },
+    {
+      "index": 2,
+      "job_id": "d834ssg0bvlc73d31ea0",
+      "type": "HW",
+      "raw_qber": 0.444444,
+      "corr_qber": 0.429444,
+      "n_circuits": 36
+    },
+    {
+      "index": 3,
+      "job_id": "d834v9vtjchs73bopfq0",
+      "type": "ATTACK",
+      "raw_qber": 0.571429,
+      "corr_qber": 0.556429,
+      "n_circuits": 36
+    },
+    {
+      "index": 4,
+      "job_id": "d834vdvtjchs73bopfv0",
+      "type": "HW",
+      "raw_qber": 0.619048,
+      "corr_qber": 0.604048,
+      "n_circuits": 36
+    },
+    {
+      "index": 5,
+      "job_id": "d834vm7oha1c73bma870",
+      "type": "ATTACK",
+      "raw_qber": 0.294118,
+      "corr_qber": 0.279118,
+      "n_circuits": 36
+    },
+    {
+      "index": 6,
+      "job_id": "d83520egbeec73ami2q0",
+      "type": "HW",
+      "raw_qber": 0.52381,
+      "corr_qber": 0.50881,
+      "n_circuits": 36
+    },
+    {
+      "index": 7,
+      "job_id": "d8352f6gbeec73ami3a0",
+      "type": "ATTACK",
+      "raw_qber": 0.555556,
+      "corr_qber": 0.540556,
+      "n_circuits": 36
+    },
+    {
+      "index": 8,
+      "job_id": "d8352kg0bvlc73d31kh0",
+      "type": "HW",
+      "raw_qber": 0.4,
+      "corr_qber": 0.385,
+      "n_circuits": 36
+    },
+    {
+      "index": 9,
+      "job_id": "d8352vegbeec73ami400",
+      "type": "ATTACK",
+      "raw_qber": 0.578947,
+      "corr_qber": 0.563947,
+      "n_circuits": 36
+    },
+    {
+      "index": 10,
+      "job_id": "d83532voha1c73bmabu0",
+      "type": "HW",
+      "raw_qber": 0.473684,
+      "corr_qber": 0.458684,
+      "n_circuits": 36
+    },
+    {
+      "index": 11,
+      "job_id": "d83535ugbeec73ami46g",
+      "type": "ATTACK",
+      "raw_qber": 0.571429,
+      "corr_qber": 0.556429,
+      "n_circuits": 36
+    },
+    {
+      "index": 12,
+      "job_id": "d83538voha1c73bmac40",
+      "type": "HW",
+      "raw_qber": 0.52381,
+      "corr_qber": 0.50881,
+      "n_circuits": 36
+    },
+    {
+      "index": 13,
+      "job_id": "d8353bugbeec73ami4cg",
+      "type": "ATTACK",
+      "raw_qber": 0.7,
+      "corr_qber": 0.685,
+      "n_circuits": 36
+    },
+    {
+      "index": 14,
+      "job_id": "d8353evoha1c73bmacag",
+      "type": "HW",
+      "raw_qber": 0.444444,
+      "corr_qber": 0.429444,
+      "n_circuits": 36
+    },
+    {
+      "index": 15,
+      "job_id": "d8353hugbeec73ami4k0",
+      "type": "ATTACK",
+      "raw_qber": 0.619048,
+      "corr_qber": 0.604048,
+      "n_circuits": 36
+    },
+    {
+      "index": 16,
+      "job_id": "d8353ko0bvlc73d31lmg",
+      "type": "HW",
+      "raw_qber": 0.444444,
+      "corr_qber": 0.429444,
+      "n_circuits": 36
+    },
+    {
+      "index": 17,
+      "job_id": "d8353nvoha1c73bmaclg",
+      "type": "ATTACK",
+      "raw_qber": 0.307692,
+      "corr_qber": 0.292692,
+      "n_circuits": 36
+    },
+    {
+      "index": 18,
+      "job_id": "d8353qg0bvlc73d31ltg",
+      "type": "HW",
+      "raw_qber": 0.347826,
+      "corr_qber": 0.332826,
+      "n_circuits": 36
+    },
+    {
+      "index": 19,
+      "job_id": "d8353tegbeec73ami520",
+      "type": "ATTACK",
+      "raw_qber": 0.6,
+      "corr_qber": 0.585,
+      "n_circuits": 36
+    },
+    {
+      "index": 20,
+      "job_id": "d835407tjchs73bopksg",
+      "type": "HW",
+      "raw_qber": 0.529412,
+      "corr_qber": 0.514412,
+      "n_circuits": 36
+    },
+    {
+      "index": 21,
+      "job_id": "d83543g0bvlc73d31m80",
+      "type": "ATTACK",
+      "raw_qber": 0.428571,
+      "corr_qber": 0.413571,
+      "n_circuits": 36
+    },
+    {
+      "index": 22,
+      "job_id": "d83546foha1c73bmad6g",
+      "type": "HW",
+      "raw_qber": 0.5,
+      "corr_qber": 0.485,
+      "n_circuits": 36
+    },
+    {
+      "index": 23,
+      "job_id": "d83549ftjchs73bopl8g",
+      "type": "ATTACK",
+      "raw_qber": 0.263158,
+      "corr_qber": 0.248158,
+      "n_circuits": 36
+    },
+    {
+      "index": 24,
+      "job_id": "d8354c7oha1c73bmadeg",
+      "type": "HW",
+      "raw_qber": 0.6875,
+      "corr_qber": 0.6725,
+      "n_circuits": 36
+    },
+    {
+      "index": 25,
+      "job_id": "d8354f00bvlc73d31mk0",
+      "type": "ATTACK",
+      "raw_qber": 0.695652,
+      "corr_qber": 0.680652,
+      "n_circuits": 36
+    },
+    {
+      "index": 26,
+      "job_id": "d8354hugbeec73ami5q0",
+      "type": "HW",
+      "raw_qber": 0.466667,
+      "corr_qber": 0.451667,
+      "n_circuits": 36
+    },
+    {
+      "index": 27,
+      "job_id": "d8354kvoha1c73bmadn0",
+      "type": "ATTACK",
+      "raw_qber": 0.333333,
+      "corr_qber": 0.318333,
+      "n_circuits": 36
+    },
+    {
+      "index": 28,
+      "job_id": "d8354nvoha1c73bmadrg",
+      "type": "HW",
+      "raw_qber": 0.583333,
+      "corr_qber": 0.568333,
+      "n_circuits": 36
+    },
+    {
+      "index": 29,
+      "job_id": "d8354qo0bvlc73d31n10",
+      "type": "ATTACK",
+      "raw_qber": 0.428571,
+      "corr_qber": 0.413571,
+      "n_circuits": 36
+    },
+    {
+      "index": 30,
+      "job_id": "d8354tvoha1c73bmae2g",
+      "type": "HW",
+      "raw_qber": 0.588235,
+      "corr_qber": 0.573235,
+      "n_circuits": 36
+    },
+    {
+      "index": 31,
+      "job_id": "d83550mgbeec73ami6bg",
+      "type": "ATTACK",
+      "raw_qber": 0.466667,
+      "corr_qber": 0.451667,
+      "n_circuits": 36
+    },
+    {
+      "index": 32,
+      "job_id": "d83553g0bvlc73d31n9g",
+      "type": "HW",
+      "raw_qber": 0.652174,
+      "corr_qber": 0.637174,
+      "n_circuits": 36
+    },
+    {
+      "index": 33,
+      "job_id": "d8355bvoha1c73bmaei0",
+      "type": "ATTACK",
+      "raw_qber": 0.388889,
+      "corr_qber": 0.373889,
+      "n_circuits": 36
+    },
+    {
+      "index": 34,
+      "job_id": "d8355pvoha1c73bmaev0",
+      "type": "HW",
+      "raw_qber": 0.545455,
+      "corr_qber": 0.530455,
+      "n_circuits": 36
+    },
+    {
+      "index": 35,
+      "job_id": "d8356180bvlc73d31o70",
+      "type": "ATTACK",
+      "raw_qber": 0.55,
+      "corr_qber": 0.535,
+      "n_circuits": 36
+    },
+    {
+      "index": 36,
+      "job_id": "d83568ftjchs73bopn7g",
+      "type": "HW",
+      "raw_qber": 0.636364,
+      "corr_qber": 0.621364,
+      "n_circuits": 36
+    },
+    {
+      "index": 37,
+      "job_id": "d8356fmgbeec73ami820",
+      "type": "ATTACK",
+      "raw_qber": 0.526316,
+      "corr_qber": 0.511316,
+      "n_circuits": 36
+    },
+    {
+      "index": 38,
+      "job_id": "d8356mvoha1c73bmafu0",
+      "type": "HW",
+      "raw_qber": 0.388889,
+      "corr_qber": 0.373889,
+      "n_circuits": 36
+    },
+    {
+      "index": 39,
+      "job_id": "d8356u6gbeec73ami8hg",
+      "type": "ATTACK",
+      "raw_qber": 0.3125,
+      "corr_qber": 0.2975,
+      "n_circuits": 36
+    },
+    {
+      "index": 40,
+      "job_id": "d83575ntjchs73bopo5g",
+      "type": "HW",
+      "raw_qber": 0.347826,
+      "corr_qber": 0.332826,
+      "n_circuits": 36
+    },
+    {
+      "index": 41,
+      "job_id": "d8357g80bvlc73d31pp0",
+      "type": "ATTACK",
+      "raw_qber": 0.3125,
+      "corr_qber": 0.2975,
+      "n_circuits": 36
+    },
+    {
+      "index": 42,
+      "job_id": "d8357nfoha1c73bmagtg",
+      "type": "HW",
+      "raw_qber": 0.5625,
+      "corr_qber": 0.5475,
+      "n_circuits": 36
+    },
+    {
+      "index": 43,
+      "job_id": "d8357unoha1c73bmah5g",
+      "type": "ATTACK",
+      "raw_qber": 0.529412,
+      "corr_qber": 0.514412,
+      "n_circuits": 36
+    },
+    {
+      "index": 44,
+      "job_id": "d835847tjchs73bopp4g",
+      "type": "HW",
+      "raw_qber": 0.411765,
+      "corr_qber": 0.396765,
+      "n_circuits": 36
+    },
+    {
+      "index": 45,
+      "job_id": "d8358ao0bvlc73d31qp0",
+      "type": "ATTACK",
+      "raw_qber": 0.458333,
+      "corr_qber": 0.443333,
+      "n_circuits": 36
+    },
+    {
+      "index": 46,
+      "job_id": "d8358ng0bvlc73d31r7g",
+      "type": "HW",
+      "raw_qber": 0.4375,
+      "corr_qber": 0.4225,
+      "n_circuits": 36
+    },
+    {
+      "index": 47,
+      "job_id": "d83592ugbeec73amiao0",
+      "type": "ATTACK",
+      "raw_qber": 0.461538,
+      "corr_qber": 0.446538,
+      "n_circuits": 36
+    },
+    {
+      "index": 48,
+      "job_id": "d83595noha1c73bmaigg",
+      "type": "HW",
+      "raw_qber": 0.647059,
+      "corr_qber": 0.632059,
+      "n_circuits": 36
+    },
+    {
+      "index": 49,
+      "job_id": "d83598mgbeec73amiaug",
+      "type": "ATTACK",
+      "raw_qber": 0.5,
+      "corr_qber": 0.485,
+      "n_circuits": 36
+    },
+    {
+      "index": 50,
+      "job_id": "d8359fntjchs73bopqi0",
+      "type": "HW",
+      "raw_qber": 0.4,
+      "corr_qber": 0.385,
+      "n_circuits": 36
+    },
+    {
+      "index": 51,
+      "job_id": "d8359intjchs73bopqmg",
+      "type": "ATTACK",
+      "raw_qber": 0.5625,
+      "corr_qber": 0.5475,
+      "n_circuits": 36
+    },
+    {
+      "index": 52,
+      "job_id": "d8359legbeec73amibd0",
+      "type": "HW",
+      "raw_qber": 0.5,
+      "corr_qber": 0.485,
+      "n_circuits": 36
+    },
+    {
+      "index": 53,
+      "job_id": "d8359o7tjchs73bopqs0",
+      "type": "ATTACK",
+      "raw_qber": 0.411765,
+      "corr_qber": 0.396765,
+      "n_circuits": 36
+    },
+    {
+      "index": 54,
+      "job_id": "d8359r6gbeec73amibkg",
+      "type": "HW",
+      "raw_qber": 0.4375,
+      "corr_qber": 0.4225,
+      "n_circuits": 36
+    },
+    {
+      "index": 55,
+      "job_id": "d8359u00bvlc73d31sgg",
+      "type": "ATTACK",
+      "raw_qber": 0.571429,
+      "corr_qber": 0.556429,
+      "n_circuits": 36
+    },
+    {
+      "index": 56,
+      "job_id": "d835a0vtjchs73bopr3g",
+      "type": "HW",
+      "raw_qber": 0.352941,
+      "corr_qber": 0.337941,
+      "n_circuits": 36
+    },
+    {
+      "index": 57,
+      "job_id": "d835a3ugbeec73amibv0",
+      "type": "ATTACK",
+      "raw_qber": 0.615385,
+      "corr_qber": 0.600385,
+      "n_circuits": 36
+    },
+    {
+      "index": 58,
+      "job_id": "d835a6g0bvlc73d31ss0",
+      "type": "HW",
+      "raw_qber": 0.388889,
+      "corr_qber": 0.373889,
+      "n_circuits": 36
+    },
+    {
+      "index": 59,
+      "job_id": "d835aa6gbeec73amic60",
+      "type": "ATTACK",
+      "raw_qber": 0.47619,
+      "corr_qber": 0.46119,
+      "n_circuits": 36
+    },
+    {
+      "index": 60,
+      "job_id": "d835acugbeec73amica0",
+      "type": "HW",
+      "raw_qber": 0.363636,
+      "corr_qber": 0.348636,
+      "n_circuits": 36
+    },
+    {
+      "index": 61,
+      "job_id": "d835afntjchs73boprj0",
+      "type": "ATTACK",
+      "raw_qber": 0.529412,
+      "corr_qber": 0.514412,
+      "n_circuits": 36
+    },
+    {
+      "index": 62,
+      "job_id": "d835ai80bvlc73d31t8g",
+      "type": "HW",
+      "raw_qber": 0.1875,
+      "corr_qber": 0.1725,
+      "n_circuits": 36
+    },
+    {
+      "index": 63,
+      "job_id": "d835alfoha1c73bmak7g",
+      "type": "ATTACK",
+      "raw_qber": 0.466667,
+      "corr_qber": 0.451667,
+      "n_circuits": 36
+    },
+    {
+      "index": 64,
+      "job_id": "d835aoegbeec73amicog",
+      "type": "HW",
+      "raw_qber": 0.333333,
+      "corr_qber": 0.318333,
+      "n_circuits": 36
+    },
+    {
+      "index": 65,
+      "job_id": "d835armgbeec73amict0",
+      "type": "ATTACK",
+      "raw_qber": 0.5625,
+      "corr_qber": 0.5475,
+      "n_circuits": 36
+    },
+    {
+      "index": 66,
+      "job_id": "d835aug0bvlc73d31tmg",
+      "type": "HW",
+      "raw_qber": 0.35,
+      "corr_qber": 0.335,
+      "n_circuits": 36
+    },
+    {
+      "index": 67,
+      "job_id": "d835b1egbeec73amid70",
+      "type": "ATTACK",
+      "raw_qber": 0.5,
+      "corr_qber": 0.485,
+      "n_circuits": 36
+    },
+    {
+      "index": 68,
+      "job_id": "d835b480bvlc73d31tt0",
+      "type": "HW",
+      "raw_qber": 0.529412,
+      "corr_qber": 0.514412,
+      "n_circuits": 36
+    },
+    {
+      "index": 69,
+      "job_id": "d835b7egbeec73amidgg",
+      "type": "ATTACK",
+      "raw_qber": 0.315789,
+      "corr_qber": 0.300789,
+      "n_circuits": 36
+    },
+    {
+      "index": 70,
+      "job_id": "d835ba7oha1c73bmal2g",
+      "type": "HW",
+      "raw_qber": 0.608696,
+      "corr_qber": 0.593696,
+      "n_circuits": 36
+    },
+    {
+      "index": 71,
+      "job_id": "d835bcvoha1c73bmal60",
+      "type": "ATTACK",
+      "raw_qber": 0.5625,
+      "corr_qber": 0.5475,
+      "n_circuits": 36
+    },
+    {
+      "index": 72,
+      "job_id": "d835bfvoha1c73bmal90",
+      "type": "HW",
+      "raw_qber": 0.4,
+      "corr_qber": 0.385,
+      "n_circuits": 36
+    },
+    {
+      "index": 73,
+      "job_id": "d835big0bvlc73d31uc0",
+      "type": "ATTACK",
+      "raw_qber": 0.636364,
+      "corr_qber": 0.621364,
+      "n_circuits": 36
+    },
+    {
+      "index": 74,
+      "job_id": "d835blmgbeec73amie20",
+      "type": "HW",
+      "raw_qber": 0.409091,
+      "corr_qber": 0.394091,
+      "n_circuits": 36
+    },
+    {
+      "index": 75,
+      "job_id": "d835bo80bvlc73d31uhg",
+      "type": "ATTACK",
+      "raw_qber": 0.466667,
+      "corr_qber": 0.451667,
+      "n_circuits": 36
+    },
+    {
+      "index": 76,
+      "job_id": "d835bregbeec73amie90",
+      "type": "HW",
+      "raw_qber": 0.52381,
+      "corr_qber": 0.50881,
+      "n_circuits": 36
+    },
+    {
+      "index": 77,
+      "job_id": "d835bu00bvlc73d31uo0",
+      "type": "ATTACK",
+      "raw_qber": 0.3,
+      "corr_qber": 0.285,
+      "n_circuits": 36
+    },
+    {
+      "index": 78,
+      "job_id": "d835c0ugbeec73amieg0",
+      "type": "HW",
+      "raw_qber": 0.411765,
+      "corr_qber": 0.396765,
+      "n_circuits": 36
+    },
+    {
+      "index": 79,
+      "job_id": "d835c3vtjchs73boptj0",
+      "type": "ATTACK",
+      "raw_qber": 0.368421,
+      "corr_qber": 0.353421,
+      "n_circuits": 36
+    },
+    {
+      "index": 80,
+      "job_id": "d835c6voha1c73bmam1g",
+      "type": "HW",
+      "raw_qber": 0.55,
+      "corr_qber": 0.535,
+      "n_circuits": 36
+    },
+    {
+      "index": 81,
+      "job_id": "d835c9o0bvlc73d31v3g",
+      "type": "ATTACK",
+      "raw_qber": 0.444444,
+      "corr_qber": 0.429444,
+      "n_circuits": 36
+    },
+    {
+      "index": 82,
+      "job_id": "d835cd6gbeec73amieug",
+      "type": "HW",
+      "raw_qber": 0.55,
+      "corr_qber": 0.535,
+      "n_circuits": 36
+    },
+    {
+      "index": 83,
+      "job_id": "d835chmgbeec73amif3g",
+      "type": "ATTACK",
+      "raw_qber": 0.5,
+      "corr_qber": 0.485,
+      "n_circuits": 36
+    },
+    {
+      "index": 84,
+      "job_id": "d835ckvtjchs73bopu5g",
+      "type": "HW",
+      "raw_qber": 0.6,
+      "corr_qber": 0.585,
+      "n_circuits": 36
+    },
+    {
+      "index": 85,
+      "job_id": "d835cno0bvlc73d31vig",
+      "type": "ATTACK",
+      "raw_qber": 0.375,
+      "corr_qber": 0.36,
+      "n_circuits": 36
+    },
+    {
+      "index": 86,
+      "job_id": "d835cqvtjchs73bopud0",
+      "type": "HW",
+      "raw_qber": 0.4,
+      "corr_qber": 0.385,
+      "n_circuits": 36
+    },
+    {
+      "index": 87,
+      "job_id": "d835ctugbeec73amifh0",
+      "type": "ATTACK",
+      "raw_qber": 0.6875,
+      "corr_qber": 0.6725,
+      "n_circuits": 36
+    }
+  ]
+}
